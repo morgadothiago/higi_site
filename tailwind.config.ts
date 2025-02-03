@@ -89,7 +89,7 @@ export default {
   			'accordion-up': 'accordion-up 0.2s ease-out'
   		},
 			backgroundImage: { 
-				"imagem-herói": "url('/app/assets/limpeza.png')"
+				"imagem-herói": "url('/public/assets/limpeza.png')"
 			 },
   	}
   },
