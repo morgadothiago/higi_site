@@ -2,9 +2,11 @@
 
 import React, { useState, useEffect, useRef } from 'react'
 import Image from 'next/image'
-
-import Logo from '@/app/assets/Logo-sem-fundo-preview 1.png'
 import { MenuIcon } from 'lucide-react'
+
+// Mova a declaração da constante Logo para depois das importações
+const Logo = '/Logo.png'
+
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
