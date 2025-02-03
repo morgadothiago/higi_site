@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useState } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import Image from 'next/image'
 
 import Logo from '@/app/assets/Logo-sem-fundo-preview 1.png'
@@ -9,15 +9,17 @@ export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   return (
-    <div className='h-16 w-full bg-[#176481] relative shadow-md items-center'>
-      <div className="flex justify-center items-center px-4 py-4">
-        <div className="flex flex-row  gap-2">
+    <div className='h-16 w-full bg-[#176481] relative shadow-md flex items-center'>
+      <div className="flex justify-between items-center px-4 sm:px-20 py-4 w-full container mx-auto">
+        <div className="flex flex-row gap-2 items-center">
           <Image src={Logo} alt="logo" width={50} height={50} />
 
-          <h1 className='text-white text-lg font-extrabold tracking-wide shadow-lg hover:text-[#1a7494] transition duration-300 md:text-4xl'>Higistofados em Geral</h1>
+
+          <h1 className='text-white text-sm sm:text-sm font-extrabold tracking-wide shadow-lg hover:text-[#1a7494] transition duration-300 md:text-2xl'>Higistofados em Geral</h1>
         </div>
-        <div className="ml-auto">
+        <div className="ml-auto flex items-center">
           <button 
+
             className="text-white md:hidden" 
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
@@ -35,7 +37,7 @@ export default function Header() {
             </div>
           )}
           {/* Menu for desktop */}
-          <div className="hidden md:flex md:gap-4 ml-4">
+          <div className="hidden md:flex md:gap-6 ml-4">
             <a href="#home" className="text-white hover:underline transition duration-300">Home</a>
             <a href="#about" className="text-white hover:underline transition duration-300">About</a>
             <a href="#services" className="text-white hover:underline transition duration-300">Services</a>
