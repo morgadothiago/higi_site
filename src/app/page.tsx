@@ -4,10 +4,10 @@ import Services from "./components/Services";
 
 export default function Home() {
   return (
-  <div className="bg-[#2582A4] w-screen  h-screen">
-   <Header />
-   <Main />
-   <Services />
-  </div>
+    <div className="bg-[#2582A4] min-h-screen overflow-x-hidden">
+      <Header />
+      <Main />
+      <Services />
+    </div>
   );
 }
