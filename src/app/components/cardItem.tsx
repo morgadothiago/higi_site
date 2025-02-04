@@ -20,16 +20,16 @@ export default function CardItem({ image, title, description, buttonText, onButt
           src={image}
           alt={title}
           fill
-          className="object-cover rounded-tl-2xl rounded-tr-2xl"
+          className="object-cover rounded-tl-2xl rounded-tr-2xl "
         />
       </div>
       
       <div className="p-6 md:w-2/3 flex flex-col justify-between">
-        <h3 className="text-gray-800 text-2xl font-bold mb-2">
+        <h3 className="text-gray-800 text-2xl font-bold mb-2 text-white">
           {title}
         </h3>
         
-        <p className="text-gray-600 mb-4">
+        <p className="text-gray-600 mb-4 text-white">
           {description}
         </p>
         

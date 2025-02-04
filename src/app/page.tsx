@@ -1,6 +1,8 @@
 import Header from "./components/header";
 import Main from "./components/main";
 import Services from "./components/Services";
+import Abouts from "./components/abouts";
+import FormControle from "./components/FormControle";
 
 export default function Home() {
   return (
@@ -8,6 +10,8 @@ export default function Home() {
       <Header />
       <Main />
       <Services />
+      <Abouts />
+      <FormControle />
     </div>
   );
 }
