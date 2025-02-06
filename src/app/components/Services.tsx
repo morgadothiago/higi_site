@@ -32,7 +32,16 @@ const products = [
   },
 ];
 
+
+
 export default function Services() {
+  const seedMenssages = () => {
+    const message = "Olá, gostaria de saber mais sobre os serviços de limpeza.";
+    const encodedMessage = encodeURIComponent(message);
+    const phoneNumber = "+5511959652987"; // Número do WhatsApp
+    const whatsappLink = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodedMessage}`;
+    window.location.href = whatsappLink;
+}
   return (
     <section className="w-full py-20 sm:px-32 bg-gradient-to-b from-[#176481] to-[#2582A4]">
       <div className="container mx-auto px-4">
@@ -83,9 +92,10 @@ export default function Services() {
                 </p>
                 <button 
                   className="w-full bg-[#176481] text-white py-3 px-6 rounded-lg flex items-center justify-center gap-2 hover:bg-[#2582A4] transition-colors duration-300 group"
-                  onClick={() => window.open('https://wa.me/seu-numero-aqui')}
+                  onClick={seedMenssages}
                 >
                   Solicitar Orçamento
+
                   <ArrowRight className="w-5 h-5 transform group-hover:translate-x-1 transition-transform" />
                 </button>
               </div>

@@ -32,7 +32,7 @@ export default function Footer() {
           <a href="#" className='text-white hover:text-gray-300 transition duration-200 flex items-center'>
             <InstagramLogo size={32} /> Instagram
           </a>
-          <a href="#" className='text-white hover:text-gray-300 transition duration-200 flex items-center'>
+          <a href="https://www.tiktok.com/@sergio.simoes85?_t=ZM-8th5g3J0FKX&_r=1" target='_blank' className='text-white hover:text-gray-300 transition duration-200 flex items-center'>
             <TiktokLogo size={32} /> TikTok
           </a>
           <a href="#" className='text-white hover:text-gray-300 transition duration-200 flex items-center'>
