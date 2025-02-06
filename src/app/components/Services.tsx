@@ -64,11 +64,11 @@ export default function Services() {
                 <Image
                   src={product.image}
                   alt={product.title}
-                  className="object-cover w-full h-full transform group-hover:scale-110 transition-transform duration-500"
+                  className="object-cover w-full h-full"
                   width={500}
                   height={300}
                 />
-                <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <div className="absolute inset-0 bg-black/40 opacity-0" />
               </div>
               
               <div className="p-6">

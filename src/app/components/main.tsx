@@ -5,24 +5,13 @@ import React from 'react';
 import limpeza from '@/app/assets/limpeza.png'
 
 const Main = () => {
-  function seedMenssages(data: any) {
-    const { nome, email, telefone, descricao } = data;
-    const message = `Olá, meu nome é ${nome}. Meu e-mail é ${email}. Meu telefone é ${telefone}.`;
-
-    // Codifica a mensagem corretamente
-    const encodedMessage = encodeURIComponent(message.trim());
-
-    // Número do WhatsApp
-    const phoneNumber = "+5511959652987";
-
-    // Monta o link de maneira exata
+  const seedMenssages = () => {
+    const message = "Olá, gostaria de saber mais sobre os serviços de limpeza.";
+    const encodedMessage = encodeURIComponent(message);
+    const phoneNumber = "+5511959652987"; // Número do WhatsApp
     const whatsappLink = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodedMessage}`;
-
-    // Abre o WhatsApp em uma nova aba
-    window.open(whatsappLink, "_blank");
-  
-  }
-
+    window.location.href = whatsappLink;
+}
 
   return (
     <section className="w-full  pt-16">
