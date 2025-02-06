@@ -3,6 +3,7 @@ import Main from "./components/main";
 import Services from "./components/Services";
 import Abouts from "./components/abouts";
 import FormControle from "./components/FormControle";
+import Footer from "./components/footer";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <Services />
       <Abouts />
       <FormControle />
+      <Footer />
     </div>
   );
 }
